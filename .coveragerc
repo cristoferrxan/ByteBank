@@ -1,0 +1,23 @@
+[run]
+# Configurações para a execução da coleta de cobertura de código.
+# O 'source' especifica os diretórios onde o código-fonte está localizado.
+source = 
+    ./codigo
+    ./tests
+
+# O 'omit' define quais arquivos ou diretórios devem ser excluídos da coleta de cobertura.
+omit =
+    */main.py
+
+
+[report]
+# Configurações para o relatório de cobertura gerado.
+# O 'exclude_lines' permite excluir linhas específicas do relatório, como métodos de string.
+exclude_lines =
+    def __str__
+
+
+[html]
+# Configurações para a geração do relatório em formato HTML.
+# O 'directory' especifica onde o relatório HTML será salvo.
+directory = coverage_relatorio_html
